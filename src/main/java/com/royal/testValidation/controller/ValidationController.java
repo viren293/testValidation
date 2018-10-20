@@ -16,6 +16,7 @@ public class ValidationController {
 
     }
 
+    //http://localhost:8080/validation/test
     @GetMapping(value = "validation/testHeader" , produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity healthCheckHdrs(
             @RequestHeader(value="X-racf" , required = false) String racfId,
